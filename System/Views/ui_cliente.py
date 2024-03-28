@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'clienteLFsoYK.ui'
+## Form generated from reading UI file 'clienteFOdGDj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -293,53 +293,53 @@ class Ui_usuarios(object):
 
         self.verticalLayout_28.addWidget(self.label_16)
 
-        self.usuTable = QTableWidget(self.frame_27)
-        if (self.usuTable.columnCount() < 11):
-            self.usuTable.setColumnCount(11)
+        self.cliTable = QTableWidget(self.frame_27)
+        if (self.cliTable.columnCount() < 11):
+            self.cliTable.setColumnCount(11)
         __qtablewidgetitem = QTableWidgetItem()
-        self.usuTable.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        self.cliTable.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
-        self.usuTable.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.cliTable.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
-        self.usuTable.setHorizontalHeaderItem(2, __qtablewidgetitem2)
-        if (self.usuTable.rowCount() < 3):
-            self.usuTable.setRowCount(3)
+        self.cliTable.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        if (self.cliTable.rowCount() < 3):
+            self.cliTable.setRowCount(3)
         __qtablewidgetitem3 = QTableWidgetItem()
-        self.usuTable.setVerticalHeaderItem(0, __qtablewidgetitem3)
+        self.cliTable.setVerticalHeaderItem(0, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
-        self.usuTable.setVerticalHeaderItem(1, __qtablewidgetitem4)
+        self.cliTable.setVerticalHeaderItem(1, __qtablewidgetitem4)
         __qtablewidgetitem5 = QTableWidgetItem()
-        self.usuTable.setVerticalHeaderItem(2, __qtablewidgetitem5)
+        self.cliTable.setVerticalHeaderItem(2, __qtablewidgetitem5)
         __qtablewidgetitem6 = QTableWidgetItem()
-        self.usuTable.setItem(0, 0, __qtablewidgetitem6)
+        self.cliTable.setItem(0, 0, __qtablewidgetitem6)
         __qtablewidgetitem7 = QTableWidgetItem()
-        self.usuTable.setItem(0, 1, __qtablewidgetitem7)
+        self.cliTable.setItem(0, 1, __qtablewidgetitem7)
         __qtablewidgetitem8 = QTableWidgetItem()
-        self.usuTable.setItem(0, 2, __qtablewidgetitem8)
-        self.usuTable.setObjectName(u"usuTable")
-        self.usuTable.setMinimumSize(QSize(0, 0))
-        self.usuTable.setMaximumSize(QSize(16777215, 16777215))
-        self.usuTable.setFrameShape(QFrame.NoFrame)
-        self.usuTable.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        self.usuTable.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
-        self.usuTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.usuTable.setSelectionMode(QAbstractItemView.SingleSelection)
-        self.usuTable.setSelectionBehavior(QAbstractItemView.SelectRows)
-        self.usuTable.setShowGrid(True)
-        self.usuTable.setGridStyle(Qt.SolidLine)
-        self.usuTable.setSortingEnabled(False)
-        self.usuTable.setRowCount(3)
-        self.usuTable.setColumnCount(11)
-        self.usuTable.horizontalHeader().setVisible(True)
-        self.usuTable.horizontalHeader().setCascadingSectionResizes(False)
-        self.usuTable.horizontalHeader().setDefaultSectionSize(120)
-        self.usuTable.horizontalHeader().setStretchLastSection(True)
-        self.usuTable.verticalHeader().setVisible(False)
-        self.usuTable.verticalHeader().setCascadingSectionResizes(False)
-        self.usuTable.verticalHeader().setHighlightSections(False)
-        self.usuTable.verticalHeader().setStretchLastSection(False)
+        self.cliTable.setItem(0, 2, __qtablewidgetitem8)
+        self.cliTable.setObjectName(u"cliTable")
+        self.cliTable.setMinimumSize(QSize(0, 0))
+        self.cliTable.setMaximumSize(QSize(16777215, 16777215))
+        self.cliTable.setFrameShape(QFrame.NoFrame)
+        self.cliTable.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.cliTable.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.cliTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.cliTable.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.cliTable.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.cliTable.setShowGrid(True)
+        self.cliTable.setGridStyle(Qt.SolidLine)
+        self.cliTable.setSortingEnabled(False)
+        self.cliTable.setRowCount(3)
+        self.cliTable.setColumnCount(11)
+        self.cliTable.horizontalHeader().setVisible(True)
+        self.cliTable.horizontalHeader().setCascadingSectionResizes(False)
+        self.cliTable.horizontalHeader().setDefaultSectionSize(120)
+        self.cliTable.horizontalHeader().setStretchLastSection(True)
+        self.cliTable.verticalHeader().setVisible(False)
+        self.cliTable.verticalHeader().setCascadingSectionResizes(False)
+        self.cliTable.verticalHeader().setHighlightSections(False)
+        self.cliTable.verticalHeader().setStretchLastSection(False)
 
-        self.verticalLayout_28.addWidget(self.usuTable)
+        self.verticalLayout_28.addWidget(self.cliTable)
 
         self.frame_26 = QFrame(self.frame_27)
         self.frame_26.setObjectName(u"frame_26")
@@ -429,11 +429,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(0, QFormLayout.LabelRole, self.labelVersion_12)
 
-        self.usuNomText = QLineEdit(self.frame_23)
-        self.usuNomText.setObjectName(u"usuNomText")
-        self.usuNomText.setMinimumSize(QSize(0, 30))
+        self.cliNom1Text = QLineEdit(self.frame_23)
+        self.cliNom1Text.setObjectName(u"cliNom1Text")
+        self.cliNom1Text.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(0, QFormLayout.FieldRole, self.usuNomText)
+        self.formLayout_7.setWidget(0, QFormLayout.FieldRole, self.cliNom1Text)
 
         self.labelVersion_20 = QLabel(self.frame_23)
         self.labelVersion_20.setObjectName(u"labelVersion_20")
@@ -442,11 +442,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(1, QFormLayout.LabelRole, self.labelVersion_20)
 
-        self.usuNom2Text = QLineEdit(self.frame_23)
-        self.usuNom2Text.setObjectName(u"usuNom2Text")
-        self.usuNom2Text.setMinimumSize(QSize(0, 30))
+        self.cliNom2Text = QLineEdit(self.frame_23)
+        self.cliNom2Text.setObjectName(u"cliNom2Text")
+        self.cliNom2Text.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(1, QFormLayout.FieldRole, self.usuNom2Text)
+        self.formLayout_7.setWidget(1, QFormLayout.FieldRole, self.cliNom2Text)
 
         self.labelVersion_21 = QLabel(self.frame_23)
         self.labelVersion_21.setObjectName(u"labelVersion_21")
@@ -455,11 +455,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(2, QFormLayout.LabelRole, self.labelVersion_21)
 
-        self.usuApe1Text = QLineEdit(self.frame_23)
-        self.usuApe1Text.setObjectName(u"usuApe1Text")
-        self.usuApe1Text.setMinimumSize(QSize(0, 30))
+        self.cliApe1Text = QLineEdit(self.frame_23)
+        self.cliApe1Text.setObjectName(u"cliApe1Text")
+        self.cliApe1Text.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(2, QFormLayout.FieldRole, self.usuApe1Text)
+        self.formLayout_7.setWidget(2, QFormLayout.FieldRole, self.cliApe1Text)
 
         self.labelVersion_22 = QLabel(self.frame_23)
         self.labelVersion_22.setObjectName(u"labelVersion_22")
@@ -468,11 +468,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(3, QFormLayout.LabelRole, self.labelVersion_22)
 
-        self.usuApe2Text = QLineEdit(self.frame_23)
-        self.usuApe2Text.setObjectName(u"usuApe2Text")
-        self.usuApe2Text.setMinimumSize(QSize(0, 30))
+        self.cliApe2Text = QLineEdit(self.frame_23)
+        self.cliApe2Text.setObjectName(u"cliApe2Text")
+        self.cliApe2Text.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(3, QFormLayout.FieldRole, self.usuApe2Text)
+        self.formLayout_7.setWidget(3, QFormLayout.FieldRole, self.cliApe2Text)
 
         self.labelVersion_14 = QLabel(self.frame_23)
         self.labelVersion_14.setObjectName(u"labelVersion_14")
@@ -481,13 +481,13 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(4, QFormLayout.LabelRole, self.labelVersion_14)
 
-        self.usuCedText = QLineEdit(self.frame_23)
-        self.usuCedText.setObjectName(u"usuCedText")
-        self.usuCedText.setMinimumSize(QSize(0, 30))
-        self.usuCedText.setFrame(True)
-        self.usuCedText.setEchoMode(QLineEdit.Normal)
+        self.cliCedText = QLineEdit(self.frame_23)
+        self.cliCedText.setObjectName(u"cliCedText")
+        self.cliCedText.setMinimumSize(QSize(0, 30))
+        self.cliCedText.setFrame(True)
+        self.cliCedText.setEchoMode(QLineEdit.Normal)
 
-        self.formLayout_7.setWidget(4, QFormLayout.FieldRole, self.usuCedText)
+        self.formLayout_7.setWidget(4, QFormLayout.FieldRole, self.cliCedText)
 
         self.labelVersion_16 = QLabel(self.frame_23)
         self.labelVersion_16.setObjectName(u"labelVersion_16")
@@ -496,11 +496,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(5, QFormLayout.LabelRole, self.labelVersion_16)
 
-        self.usuNickText = QLineEdit(self.frame_23)
-        self.usuNickText.setObjectName(u"usuNickText")
-        self.usuNickText.setMinimumSize(QSize(0, 30))
+        self.cliUbiText = QLineEdit(self.frame_23)
+        self.cliUbiText.setObjectName(u"cliUbiText")
+        self.cliUbiText.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(5, QFormLayout.FieldRole, self.usuNickText)
+        self.formLayout_7.setWidget(5, QFormLayout.FieldRole, self.cliUbiText)
 
         self.labelVersion_18 = QLabel(self.frame_23)
         self.labelVersion_18.setObjectName(u"labelVersion_18")
@@ -509,11 +509,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(6, QFormLayout.LabelRole, self.labelVersion_18)
 
-        self.usuConText = QLineEdit(self.frame_23)
-        self.usuConText.setObjectName(u"usuConText")
-        self.usuConText.setMinimumSize(QSize(0, 30))
+        self.cliCorrText = QLineEdit(self.frame_23)
+        self.cliCorrText.setObjectName(u"cliCorrText")
+        self.cliCorrText.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(6, QFormLayout.FieldRole, self.usuConText)
+        self.formLayout_7.setWidget(6, QFormLayout.FieldRole, self.cliCorrText)
 
         self.labelVersion_13 = QLabel(self.frame_23)
         self.labelVersion_13.setObjectName(u"labelVersion_13")
@@ -522,11 +522,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(7, QFormLayout.LabelRole, self.labelVersion_13)
 
-        self.usuDirText = QLineEdit(self.frame_23)
-        self.usuDirText.setObjectName(u"usuDirText")
-        self.usuDirText.setMinimumSize(QSize(0, 30))
+        self.cliDirText = QLineEdit(self.frame_23)
+        self.cliDirText.setObjectName(u"cliDirText")
+        self.cliDirText.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(7, QFormLayout.FieldRole, self.usuDirText)
+        self.formLayout_7.setWidget(7, QFormLayout.FieldRole, self.cliDirText)
 
         self.labelVersion_15 = QLabel(self.frame_23)
         self.labelVersion_15.setObjectName(u"labelVersion_15")
@@ -535,11 +535,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(8, QFormLayout.LabelRole, self.labelVersion_15)
 
-        self.usuTelText = QLineEdit(self.frame_23)
-        self.usuTelText.setObjectName(u"usuTelText")
-        self.usuTelText.setMinimumSize(QSize(0, 30))
+        self.cliTelText = QLineEdit(self.frame_23)
+        self.cliTelText.setObjectName(u"cliTelText")
+        self.cliTelText.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(8, QFormLayout.FieldRole, self.usuTelText)
+        self.formLayout_7.setWidget(8, QFormLayout.FieldRole, self.cliTelText)
 
 
         self.verticalLayout_27.addWidget(self.frame_23)
@@ -613,60 +613,60 @@ class Ui_usuarios(object):
         usuarios.setWindowTitle(QCoreApplication.translate("usuarios", u"Form", None))
         self.label_3.setText(QCoreApplication.translate("usuarios", u"<html><head/><body><p><span style=\" font-size:16pt; font-weight:700;\">Clientes</span></p></body></html>", None))
         self.label_16.setText(QCoreApplication.translate("usuarios", u"<html><head/><body><p><span style=\" font-size:12pt; font-weight:700;\">Lista de Clientes</span></p></body></html>", None))
-        ___qtablewidgetitem = self.usuTable.horizontalHeaderItem(0)
+        ___qtablewidgetitem = self.cliTable.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("usuarios", u"0", None));
-        ___qtablewidgetitem1 = self.usuTable.horizontalHeaderItem(1)
+        ___qtablewidgetitem1 = self.cliTable.horizontalHeaderItem(1)
         ___qtablewidgetitem1.setText(QCoreApplication.translate("usuarios", u"Nueva columna", None));
-        ___qtablewidgetitem2 = self.usuTable.horizontalHeaderItem(2)
+        ___qtablewidgetitem2 = self.cliTable.horizontalHeaderItem(2)
         ___qtablewidgetitem2.setText(QCoreApplication.translate("usuarios", u"1", None));
-        ___qtablewidgetitem3 = self.usuTable.verticalHeaderItem(0)
+        ___qtablewidgetitem3 = self.cliTable.verticalHeaderItem(0)
         ___qtablewidgetitem3.setText(QCoreApplication.translate("usuarios", u"New Row", None));
-        ___qtablewidgetitem4 = self.usuTable.verticalHeaderItem(1)
+        ___qtablewidgetitem4 = self.cliTable.verticalHeaderItem(1)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("usuarios", u"New Row", None));
-        ___qtablewidgetitem5 = self.usuTable.verticalHeaderItem(2)
+        ___qtablewidgetitem5 = self.cliTable.verticalHeaderItem(2)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("usuarios", u"New Row", None));
 
-        __sortingEnabled = self.usuTable.isSortingEnabled()
-        self.usuTable.setSortingEnabled(False)
-        ___qtablewidgetitem6 = self.usuTable.item(0, 0)
+        __sortingEnabled = self.cliTable.isSortingEnabled()
+        self.cliTable.setSortingEnabled(False)
+        ___qtablewidgetitem6 = self.cliTable.item(0, 0)
         ___qtablewidgetitem6.setText(QCoreApplication.translate("usuarios", u"Nombre ", None));
-        ___qtablewidgetitem7 = self.usuTable.item(0, 1)
+        ___qtablewidgetitem7 = self.cliTable.item(0, 1)
         ___qtablewidgetitem7.setText(QCoreApplication.translate("usuarios", u"C\u00e9dula", None));
-        ___qtablewidgetitem8 = self.usuTable.item(0, 2)
+        ___qtablewidgetitem8 = self.cliTable.item(0, 2)
         ___qtablewidgetitem8.setText(QCoreApplication.translate("usuarios", u"Rol", None));
-        self.usuTable.setSortingEnabled(__sortingEnabled)
+        self.cliTable.setSortingEnabled(__sortingEnabled)
 
         self.usuAddButton.setText(QCoreApplication.translate("usuarios", u"Agregar", None))
         self.usuEditButton.setText(QCoreApplication.translate("usuarios", u"Editar", None))
         self.usuDelButton.setText(QCoreApplication.translate("usuarios", u"Eliminar", None))
         self.label_15.setText(QCoreApplication.translate("usuarios", u"<html><head/><body><p><span style=\" font-size:12pt; font-weight:700;\">Cliente Seleccionado</span></p></body></html>", None))
         self.labelVersion_12.setText(QCoreApplication.translate("usuarios", u"Nombre1", None))
-        self.usuNomText.setText("")
-        self.usuNomText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer nombre", None))
+        self.cliNom1Text.setText("")
+        self.cliNom1Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer nombre", None))
         self.labelVersion_20.setText(QCoreApplication.translate("usuarios", u"Nombre2", None))
-        self.usuNom2Text.setText("")
-        self.usuNom2Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el segundo nombre", None))
+        self.cliNom2Text.setText("")
+        self.cliNom2Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el segundo nombre", None))
         self.labelVersion_21.setText(QCoreApplication.translate("usuarios", u"Apellido1", None))
-        self.usuApe1Text.setText("")
-        self.usuApe1Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer apellido", None))
+        self.cliApe1Text.setText("")
+        self.cliApe1Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer apellido", None))
         self.labelVersion_22.setText(QCoreApplication.translate("usuarios", u"Apellido2", None))
-        self.usuApe2Text.setText("")
-        self.usuApe2Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el segundo apellido", None))
+        self.cliApe2Text.setText("")
+        self.cliApe2Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el segundo apellido", None))
         self.labelVersion_14.setText(QCoreApplication.translate("usuarios", u"C\u00e9dula", None))
-        self.usuCedText.setText("")
-        self.usuCedText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el numero de c\u00e9dula", None))
+        self.cliCedText.setText("")
+        self.cliCedText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el numero de c\u00e9dula", None))
         self.labelVersion_16.setText(QCoreApplication.translate("usuarios", u"Ubicaci\u00f3n", None))
-        self.usuNickText.setText("")
-        self.usuNickText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el alias", None))
+        self.cliUbiText.setText("")
+        self.cliUbiText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el alias", None))
         self.labelVersion_18.setText(QCoreApplication.translate("usuarios", u"Correo", None))
-        self.usuConText.setText("")
-        self.usuConText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese la contrase\u00f1a", None))
+        self.cliCorrText.setText("")
+        self.cliCorrText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese la contrase\u00f1a", None))
         self.labelVersion_13.setText(QCoreApplication.translate("usuarios", u"Direcci\u00f3n", None))
-        self.usuDirText.setText("")
-        self.usuDirText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese la direcci\u00f3n", None))
+        self.cliDirText.setText("")
+        self.cliDirText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese la direcci\u00f3n", None))
         self.labelVersion_15.setText(QCoreApplication.translate("usuarios", u"Tel\u00e9fono", None))
-        self.usuTelText.setText("")
-        self.usuTelText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el numero de tel\u00e9fono", None))
+        self.cliTelText.setText("")
+        self.cliTelText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el numero de tel\u00e9fono", None))
         self.usuSaveButton.setText(QCoreApplication.translate("usuarios", u"Confirmar", None))
         self.usuCancelButton.setText(QCoreApplication.translate("usuarios", u"Cancelar", None))
         self.usuClearButton.setText(QCoreApplication.translate("usuarios", u"Limpiar", None))

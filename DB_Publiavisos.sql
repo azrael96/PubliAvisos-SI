@@ -91,7 +91,7 @@ ALTER TABLE `registro` ADD FOREIGN KEY (`ord_ID_fk`) REFERENCES orden(`ord_ID`);
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `orden`
+-- Estructura de tabla para la tabla `cotizacion`
 --
 
 CREATE TABLE cotizacion (
@@ -106,6 +106,6 @@ ALTER TABLE `cotizacion` ADD FOREIGN KEY (`cli_cedula_fk`) REFERENCES cliente(cl
 -- --------------------------------------------------------
 
 --
--- Usuarios iniales de la base de datos
+-- Usuarios iniciales de la base de datos
 --
 

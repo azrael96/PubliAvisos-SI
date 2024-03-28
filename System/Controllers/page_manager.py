@@ -4,10 +4,10 @@ from System.Models import functions
 
 from System.Views.ui_manager import Ui_MainWindow as Ui_ManagerWindow
 
-from System.Controllers.home import HomeWidget
-from System.Controllers.cliente import ClienteWidget
-from System.Controllers.usuario import UsuarioWidget
-from System.Controllers.orden import OrdenWidget
+from System.Controllers.page_home import HomeWidget
+from System.Controllers.page_cliente import ClienteWidget
+from System.Controllers.page_usuario import UsuarioWidget
+from System.Controllers.page_orden import OrdenWidget
 
 from PySide6.QtCore import QEvent, QTimer
 from PySide6.QtGui import Qt, QColor, QIcon

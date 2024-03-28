@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'usuariomNJZVU.ui'
+## Form generated from reading UI file 'usuariovAiIqT.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -429,11 +429,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(0, QFormLayout.LabelRole, self.labelVersion_12)
 
-        self.usuNomText = QLineEdit(self.frame_23)
-        self.usuNomText.setObjectName(u"usuNomText")
-        self.usuNomText.setMinimumSize(QSize(0, 30))
+        self.usuNom1Text = QLineEdit(self.frame_23)
+        self.usuNom1Text.setObjectName(u"usuNom1Text")
+        self.usuNom1Text.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(0, QFormLayout.FieldRole, self.usuNomText)
+        self.formLayout_7.setWidget(0, QFormLayout.FieldRole, self.usuNom1Text)
 
         self.labelVersion_20 = QLabel(self.frame_23)
         self.labelVersion_20.setObjectName(u"labelVersion_20")
@@ -496,11 +496,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(5, QFormLayout.LabelRole, self.labelVersion_16)
 
-        self.usuNickText = QLineEdit(self.frame_23)
-        self.usuNickText.setObjectName(u"usuNickText")
-        self.usuNickText.setMinimumSize(QSize(0, 30))
+        self.usuUbiText = QLineEdit(self.frame_23)
+        self.usuUbiText.setObjectName(u"usuUbiText")
+        self.usuUbiText.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(5, QFormLayout.FieldRole, self.usuNickText)
+        self.formLayout_7.setWidget(5, QFormLayout.FieldRole, self.usuUbiText)
 
         self.labelVersion_18 = QLabel(self.frame_23)
         self.labelVersion_18.setObjectName(u"labelVersion_18")
@@ -509,11 +509,11 @@ class Ui_usuarios(object):
 
         self.formLayout_7.setWidget(6, QFormLayout.LabelRole, self.labelVersion_18)
 
-        self.usuConText = QLineEdit(self.frame_23)
-        self.usuConText.setObjectName(u"usuConText")
-        self.usuConText.setMinimumSize(QSize(0, 30))
+        self.usuCorrText = QLineEdit(self.frame_23)
+        self.usuCorrText.setObjectName(u"usuCorrText")
+        self.usuCorrText.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(6, QFormLayout.FieldRole, self.usuConText)
+        self.formLayout_7.setWidget(6, QFormLayout.FieldRole, self.usuCorrText)
 
         self.labelVersion_13 = QLabel(self.frame_23)
         self.labelVersion_13.setObjectName(u"labelVersion_13")
@@ -641,8 +641,8 @@ class Ui_usuarios(object):
         self.usuDelButton.setText(QCoreApplication.translate("usuarios", u"Eliminar", None))
         self.label_15.setText(QCoreApplication.translate("usuarios", u"<html><head/><body><p><span style=\" font-size:12pt; font-weight:700;\">Usuario Seleccionado</span></p></body></html>", None))
         self.labelVersion_12.setText(QCoreApplication.translate("usuarios", u"Nombre1", None))
-        self.usuNomText.setText("")
-        self.usuNomText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer nombre", None))
+        self.usuNom1Text.setText("")
+        self.usuNom1Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer nombre", None))
         self.labelVersion_20.setText(QCoreApplication.translate("usuarios", u"Nombre2", None))
         self.usuNom2Text.setText("")
         self.usuNom2Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el segundo nombre", None))
@@ -656,11 +656,11 @@ class Ui_usuarios(object):
         self.usuCedText.setText("")
         self.usuCedText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el numero de c\u00e9dula", None))
         self.labelVersion_16.setText(QCoreApplication.translate("usuarios", u"Ubicaci\u00f3n", None))
-        self.usuNickText.setText("")
-        self.usuNickText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el alias", None))
+        self.usuUbiText.setText("")
+        self.usuUbiText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el alias", None))
         self.labelVersion_18.setText(QCoreApplication.translate("usuarios", u"Correo", None))
-        self.usuConText.setText("")
-        self.usuConText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese la contrase\u00f1a", None))
+        self.usuCorrText.setText("")
+        self.usuCorrText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese la contrase\u00f1a", None))
         self.labelVersion_13.setText(QCoreApplication.translate("usuarios", u"Direcci\u00f3n", None))
         self.usuDirText.setText("")
         self.usuDirText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese la direcci\u00f3n", None))

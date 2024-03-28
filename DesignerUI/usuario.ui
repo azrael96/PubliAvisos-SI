@@ -670,7 +670,7 @@ QComboBox:disabled {
                 </widget>
                </item>
                <item row="0" column="1">
-                <widget class="QLineEdit" name="usuNomText">
+                <widget class="QLineEdit" name="usuNom1Text">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
@@ -821,7 +821,7 @@ QComboBox:disabled {
                 </widget>
                </item>
                <item row="5" column="1">
-                <widget class="QLineEdit" name="usuNickText">
+                <widget class="QLineEdit" name="usuUbiText">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
@@ -850,7 +850,7 @@ QComboBox:disabled {
                 </widget>
                </item>
                <item row="6" column="1">
-                <widget class="QLineEdit" name="usuConText">
+                <widget class="QLineEdit" name="usuCorrText">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
