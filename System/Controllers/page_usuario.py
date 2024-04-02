@@ -1,5 +1,4 @@
-from PySide6 import QtWidgets
-from PySide6.QtWidgets import QWidget, QMessageBox
+from PySide6.QtWidgets import QWidget, QMessageBox, QTableWidgetItem
 from System.Views.ui_usuario import Ui_usuarios
 
 from System.Models import db_usuario as usuariosData
@@ -12,11 +11,11 @@ class UsuarioWidget(QWidget):
         self.ui.setupUi(self)
 
         def switchDelDisable(val):
+            self.ui.usuCedText.setEnabled(False)
             self.ui.usuNom1Text.setEnabled(val)
             self.ui.usuNom2Text.setEnabled(val)
             self.ui.usuApe1Text.setEnabled(val)
             self.ui.usuApe2Text.setEnabled(val)
-            self.ui.usuCedText.setEnabled(val)
             self.ui.usuUbiText.setEnabled(val)
             self.ui.usuCorrText.setEnabled(val)
             self.ui.usuDirText.setEnabled(val)
@@ -55,6 +54,7 @@ class UsuarioWidget(QWidget):
             self.clear()
             self.clearCod()
             self.switchDisable(True)
+            self.ui.usuCedText.setEnabled(True)
 
         def edit():
             global codigo, pressed
@@ -136,11 +136,11 @@ class UsuarioWidget(QWidget):
         self.ui.usuTable.setCurrentCell(-1, -1)
 
     def switchDisable(self, val):
+        self.ui.usuCedText.setEnabled(False)
         self.ui.usuNom1Text.setEnabled(val)
         self.ui.usuNom2Text.setEnabled(val)
         self.ui.usuApe1Text.setEnabled(val)
         self.ui.usuApe2Text.setEnabled(val)
-        self.ui.usuCedText.setEnabled(val)
         self.ui.usuUbiText.setEnabled(val)
         self.ui.usuCorrText.setEnabled(val)
         self.ui.usuDirText.setEnabled(val)
@@ -183,6 +183,6 @@ class UsuarioWidget(QWidget):
             for row in data:
                 numcol = 0
                 for col in row:
-                    self.ui.usuTable.setItem(numrow, numcol, QtWidgets.QTableWidgetItem(str(col)))
+                    self.ui.usuTable.setItem(numrow, numcol, QTableWidgetItem(str(col)))
                     numcol += 1
                 numrow += 1

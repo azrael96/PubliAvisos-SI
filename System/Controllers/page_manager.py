@@ -91,6 +91,7 @@ class MainWindow(QMainWindow):
 
             # CLOSE APPLICATION
             self.ui.closeAppBtn.clicked.connect(lambda: self.close())
+
             #Make invisible no use buttons
             #self.ui.closeAppBtn.setVisible(False)
             #self.ui.settingsTopBtn.setVisible(False)

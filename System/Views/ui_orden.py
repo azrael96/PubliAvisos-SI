@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ordenzmDRMv.ui'
+## Form generated from reading UI file 'ordenHQTrBQ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -20,7 +20,7 @@ class Ui_usuarios(object):
             usuarios.setObjectName(u"usuarios")
         usuarios.resize(1182, 608)
         usuarios.setStyleSheet(u"/*---- QLineEdit  ----*/\n"
-"QLineEdit {\n"
+"QLineEdit, QDateEdit {\n"
 "    background-color: #6AAB6D;\n"
 "    border-radius: 5px;\n"
 "    border: 2px solid #6AAB6D;\n"
@@ -38,7 +38,7 @@ class Ui_usuarios(object):
 "    border: 2px solid #FFF59D;\n"
 "}\n"
 "\n"
-"QLineEdit:disabled {\n"
+"QLineEdit:disabled, QDateEdit:disabled {\n"
 "    color: #dbdbdb;\n"
 "    border: 2px solid #808080;\n"
 "    background-color: #4d4d4d;\n"
@@ -64,9 +64,9 @@ class Ui_usuarios(object):
 "\n"
 "QPushButton:disabled {\n"
 "    color: #dbdbdb;\n"
-"    border: 2px solid #808080;\n"
-"    background-co"
-                        "lor: #4d4d4d;\n"
+"    border: 2px solid"
+                        " #808080;\n"
+"    background-color: #4d4d4d;\n"
 "}\n"
 "\n"
 "/*---- QTableWidget ----*/\n"
@@ -109,9 +109,9 @@ class Ui_usuarios(object):
 "    padding: 3px;\n"
 "    border-top-left-radius: 7px;\n"
 "    border-top-right-radius: 7px;\n"
-"    color: #f8f8f2;\n"
-"    border-"
-                        "radius: 0px;\n"
+"    "
+                        "color: #f8f8f2;\n"
+"    border-radius: 0px;\n"
 "}\n"
 "\n"
 "QHeaderView::section:vertical {\n"
@@ -153,9 +153,9 @@ class Ui_usuarios(object):
 "    subcontrol-origin: margin;\n"
 "}\n"
 "\n"
-"QScrollBar::up-arrow:horizontal,\n"
-"QScrollBar::down-a"
-                        "rrow:horizontal {\n"
+"QScrollBar::up-arrow:hor"
+                        "izontal,\n"
+"QScrollBar::down-arrow:horizontal {\n"
 "    background: none;\n"
 "}\n"
 "\n"
@@ -196,10 +196,10 @@ class Ui_usuarios(object):
 "    border-top-right-radius: 4px;\n"
 "    subcontrol-position: top;\n"
 "    subcontrol-origin: margin;\n"
-"}\n"
+""
+                        "}\n"
 "\n"
-"QScrollBar::up-ar"
-                        "row:vertical,\n"
+"QScrollBar::up-arrow:vertical,\n"
 "QScrollBar::down-arrow:vertical {\n"
 "    background: none;\n"
 "}\n"
@@ -238,9 +238,9 @@ class Ui_usuarios(object):
 "}\n"
 "\n"
 "QComboBox QAbstractItemView {\n"
-"    color: #FFF59D;\n"
-"    background"
-                        "-color: #6AAB6D;\n"
+"    color:"
+                        " #FFF59D;\n"
+"    background-color: #6AAB6D;\n"
 "    padding: 10px;\n"
 "    selection-background-color: #6AAB6D;\n"
 "}\n"
@@ -293,53 +293,53 @@ class Ui_usuarios(object):
 
         self.verticalLayout_28.addWidget(self.label_16)
 
-        self.usuTable = QTableWidget(self.frame_27)
-        if (self.usuTable.columnCount() < 11):
-            self.usuTable.setColumnCount(11)
+        self.ordTable = QTableWidget(self.frame_27)
+        if (self.ordTable.columnCount() < 11):
+            self.ordTable.setColumnCount(11)
         __qtablewidgetitem = QTableWidgetItem()
-        self.usuTable.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        self.ordTable.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
-        self.usuTable.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.ordTable.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
-        self.usuTable.setHorizontalHeaderItem(2, __qtablewidgetitem2)
-        if (self.usuTable.rowCount() < 3):
-            self.usuTable.setRowCount(3)
+        self.ordTable.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        if (self.ordTable.rowCount() < 3):
+            self.ordTable.setRowCount(3)
         __qtablewidgetitem3 = QTableWidgetItem()
-        self.usuTable.setVerticalHeaderItem(0, __qtablewidgetitem3)
+        self.ordTable.setVerticalHeaderItem(0, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
-        self.usuTable.setVerticalHeaderItem(1, __qtablewidgetitem4)
+        self.ordTable.setVerticalHeaderItem(1, __qtablewidgetitem4)
         __qtablewidgetitem5 = QTableWidgetItem()
-        self.usuTable.setVerticalHeaderItem(2, __qtablewidgetitem5)
+        self.ordTable.setVerticalHeaderItem(2, __qtablewidgetitem5)
         __qtablewidgetitem6 = QTableWidgetItem()
-        self.usuTable.setItem(0, 0, __qtablewidgetitem6)
+        self.ordTable.setItem(0, 0, __qtablewidgetitem6)
         __qtablewidgetitem7 = QTableWidgetItem()
-        self.usuTable.setItem(0, 1, __qtablewidgetitem7)
+        self.ordTable.setItem(0, 1, __qtablewidgetitem7)
         __qtablewidgetitem8 = QTableWidgetItem()
-        self.usuTable.setItem(0, 2, __qtablewidgetitem8)
-        self.usuTable.setObjectName(u"usuTable")
-        self.usuTable.setMinimumSize(QSize(0, 0))
-        self.usuTable.setMaximumSize(QSize(16777215, 16777215))
-        self.usuTable.setFrameShape(QFrame.NoFrame)
-        self.usuTable.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        self.usuTable.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
-        self.usuTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.usuTable.setSelectionMode(QAbstractItemView.SingleSelection)
-        self.usuTable.setSelectionBehavior(QAbstractItemView.SelectRows)
-        self.usuTable.setShowGrid(True)
-        self.usuTable.setGridStyle(Qt.SolidLine)
-        self.usuTable.setSortingEnabled(False)
-        self.usuTable.setRowCount(3)
-        self.usuTable.setColumnCount(11)
-        self.usuTable.horizontalHeader().setVisible(True)
-        self.usuTable.horizontalHeader().setCascadingSectionResizes(False)
-        self.usuTable.horizontalHeader().setDefaultSectionSize(120)
-        self.usuTable.horizontalHeader().setStretchLastSection(True)
-        self.usuTable.verticalHeader().setVisible(False)
-        self.usuTable.verticalHeader().setCascadingSectionResizes(False)
-        self.usuTable.verticalHeader().setHighlightSections(False)
-        self.usuTable.verticalHeader().setStretchLastSection(False)
+        self.ordTable.setItem(0, 2, __qtablewidgetitem8)
+        self.ordTable.setObjectName(u"ordTable")
+        self.ordTable.setMinimumSize(QSize(0, 0))
+        self.ordTable.setMaximumSize(QSize(16777215, 16777215))
+        self.ordTable.setFrameShape(QFrame.NoFrame)
+        self.ordTable.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.ordTable.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.ordTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.ordTable.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.ordTable.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.ordTable.setShowGrid(True)
+        self.ordTable.setGridStyle(Qt.SolidLine)
+        self.ordTable.setSortingEnabled(False)
+        self.ordTable.setRowCount(3)
+        self.ordTable.setColumnCount(11)
+        self.ordTable.horizontalHeader().setVisible(True)
+        self.ordTable.horizontalHeader().setCascadingSectionResizes(False)
+        self.ordTable.horizontalHeader().setDefaultSectionSize(120)
+        self.ordTable.horizontalHeader().setStretchLastSection(True)
+        self.ordTable.verticalHeader().setVisible(False)
+        self.ordTable.verticalHeader().setCascadingSectionResizes(False)
+        self.ordTable.verticalHeader().setHighlightSections(False)
+        self.ordTable.verticalHeader().setStretchLastSection(False)
 
-        self.verticalLayout_28.addWidget(self.usuTable)
+        self.verticalLayout_28.addWidget(self.ordTable)
 
         self.frame_26 = QFrame(self.frame_27)
         self.frame_26.setObjectName(u"frame_26")
@@ -351,43 +351,43 @@ class Ui_usuarios(object):
 
         self.horizontalLayout_14.addItem(self.horizontalSpacer)
 
-        self.usuAddButton = QPushButton(self.frame_26)
-        self.usuAddButton.setObjectName(u"usuAddButton")
-        self.usuAddButton.setMinimumSize(QSize(120, 30))
-        self.usuAddButton.setFont(font)
-        self.usuAddButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.ordAddButton = QPushButton(self.frame_26)
+        self.ordAddButton.setObjectName(u"ordAddButton")
+        self.ordAddButton.setMinimumSize(QSize(120, 30))
+        self.ordAddButton.setFont(font)
+        self.ordAddButton.setCursor(QCursor(Qt.PointingHandCursor))
         icon = QIcon()
         icon.addFile(u":/icons/images/icons/cil-check-circle.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.usuAddButton.setIcon(icon)
+        self.ordAddButton.setIcon(icon)
 
-        self.horizontalLayout_14.addWidget(self.usuAddButton)
+        self.horizontalLayout_14.addWidget(self.ordAddButton)
 
-        self.usuEditButton = QPushButton(self.frame_26)
-        self.usuEditButton.setObjectName(u"usuEditButton")
+        self.ordEditButton = QPushButton(self.frame_26)
+        self.ordEditButton.setObjectName(u"ordEditButton")
         sizePolicy = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.usuEditButton.sizePolicy().hasHeightForWidth())
-        self.usuEditButton.setSizePolicy(sizePolicy)
-        self.usuEditButton.setMinimumSize(QSize(120, 30))
-        self.usuEditButton.setFont(font)
-        self.usuEditButton.setCursor(QCursor(Qt.PointingHandCursor))
+        sizePolicy.setHeightForWidth(self.ordEditButton.sizePolicy().hasHeightForWidth())
+        self.ordEditButton.setSizePolicy(sizePolicy)
+        self.ordEditButton.setMinimumSize(QSize(120, 30))
+        self.ordEditButton.setFont(font)
+        self.ordEditButton.setCursor(QCursor(Qt.PointingHandCursor))
         icon1 = QIcon()
         icon1.addFile(u":/icons/images/icons/cil-pencil.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.usuEditButton.setIcon(icon1)
+        self.ordEditButton.setIcon(icon1)
 
-        self.horizontalLayout_14.addWidget(self.usuEditButton)
+        self.horizontalLayout_14.addWidget(self.ordEditButton)
 
-        self.usuDelButton = QPushButton(self.frame_26)
-        self.usuDelButton.setObjectName(u"usuDelButton")
-        self.usuDelButton.setMinimumSize(QSize(120, 30))
-        self.usuDelButton.setFont(font)
-        self.usuDelButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.ordDelButton = QPushButton(self.frame_26)
+        self.ordDelButton.setObjectName(u"ordDelButton")
+        self.ordDelButton.setMinimumSize(QSize(120, 30))
+        self.ordDelButton.setFont(font)
+        self.ordDelButton.setCursor(QCursor(Qt.PointingHandCursor))
         icon2 = QIcon()
         icon2.addFile(u":/icons/images/icons/cil-x-circle.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.usuDelButton.setIcon(icon2)
+        self.ordDelButton.setIcon(icon2)
 
-        self.horizontalLayout_14.addWidget(self.usuDelButton)
+        self.horizontalLayout_14.addWidget(self.ordDelButton)
 
         self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
@@ -420,106 +420,248 @@ class Ui_usuarios(object):
         self.frame_23.setObjectName(u"frame_23")
         self.frame_23.setFrameShape(QFrame.StyledPanel)
         self.frame_23.setFrameShadow(QFrame.Raised)
-        self.formLayout_7 = QFormLayout(self.frame_23)
-        self.formLayout_7.setObjectName(u"formLayout_7")
-        self.labelVersion_12 = QLabel(self.frame_23)
-        self.labelVersion_12.setObjectName(u"labelVersion_12")
-        self.labelVersion_12.setLineWidth(1)
-        self.labelVersion_12.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.gridLayout = QGridLayout(self.frame_23)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.labelVersion_22 = QLabel(self.frame_23)
+        self.labelVersion_22.setObjectName(u"labelVersion_22")
+        self.labelVersion_22.setLineWidth(1)
+        self.labelVersion_22.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.formLayout_7.setWidget(0, QFormLayout.LabelRole, self.labelVersion_12)
-
-        self.usuNomText = QLineEdit(self.frame_23)
-        self.usuNomText.setObjectName(u"usuNomText")
-        self.usuNomText.setMinimumSize(QSize(0, 30))
-
-        self.formLayout_7.setWidget(0, QFormLayout.FieldRole, self.usuNomText)
+        self.gridLayout.addWidget(self.labelVersion_22, 4, 0, 1, 1)
 
         self.labelVersion_20 = QLabel(self.frame_23)
         self.labelVersion_20.setObjectName(u"labelVersion_20")
         self.labelVersion_20.setLineWidth(1)
         self.labelVersion_20.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.formLayout_7.setWidget(1, QFormLayout.LabelRole, self.labelVersion_20)
-
-        self.usuNom2Text = QLineEdit(self.frame_23)
-        self.usuNom2Text.setObjectName(u"usuNom2Text")
-        self.usuNom2Text.setMinimumSize(QSize(0, 30))
-
-        self.formLayout_7.setWidget(1, QFormLayout.FieldRole, self.usuNom2Text)
-
-        self.labelVersion_21 = QLabel(self.frame_23)
-        self.labelVersion_21.setObjectName(u"labelVersion_21")
-        self.labelVersion_21.setLineWidth(1)
-        self.labelVersion_21.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.formLayout_7.setWidget(2, QFormLayout.LabelRole, self.labelVersion_21)
-
-        self.usuApe1Text = QLineEdit(self.frame_23)
-        self.usuApe1Text.setObjectName(u"usuApe1Text")
-        self.usuApe1Text.setMinimumSize(QSize(0, 30))
-
-        self.formLayout_7.setWidget(2, QFormLayout.FieldRole, self.usuApe1Text)
+        self.gridLayout.addWidget(self.labelVersion_20, 3, 0, 1, 1)
 
         self.labelVersion_17 = QLabel(self.frame_23)
         self.labelVersion_17.setObjectName(u"labelVersion_17")
         self.labelVersion_17.setLineWidth(1)
         self.labelVersion_17.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.formLayout_7.setWidget(3, QFormLayout.LabelRole, self.labelVersion_17)
-
-        self.usuRolCombo = QComboBox(self.frame_23)
-        self.usuRolCombo.addItem("")
-        self.usuRolCombo.addItem("")
-        self.usuRolCombo.addItem("")
-        self.usuRolCombo.setObjectName(u"usuRolCombo")
-        self.usuRolCombo.setFont(font)
-        self.usuRolCombo.setAutoFillBackground(False)
-        self.usuRolCombo.setIconSize(QSize(16, 16))
-        self.usuRolCombo.setFrame(True)
-
-        self.formLayout_7.setWidget(3, QFormLayout.FieldRole, self.usuRolCombo)
-
-        self.labelVersion_22 = QLabel(self.frame_23)
-        self.labelVersion_22.setObjectName(u"labelVersion_22")
-        self.labelVersion_22.setLineWidth(1)
-        self.labelVersion_22.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.formLayout_7.setWidget(5, QFormLayout.LabelRole, self.labelVersion_22)
-
-        self.usuApe2Text = QLineEdit(self.frame_23)
-        self.usuApe2Text.setObjectName(u"usuApe2Text")
-        self.usuApe2Text.setMinimumSize(QSize(0, 30))
-
-        self.formLayout_7.setWidget(5, QFormLayout.FieldRole, self.usuApe2Text)
-
-        self.labelVersion_14 = QLabel(self.frame_23)
-        self.labelVersion_14.setObjectName(u"labelVersion_14")
-        self.labelVersion_14.setLineWidth(1)
-        self.labelVersion_14.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.formLayout_7.setWidget(6, QFormLayout.LabelRole, self.labelVersion_14)
-
-        self.usuCedText = QLineEdit(self.frame_23)
-        self.usuCedText.setObjectName(u"usuCedText")
-        self.usuCedText.setMinimumSize(QSize(0, 30))
-        self.usuCedText.setFrame(True)
-        self.usuCedText.setEchoMode(QLineEdit.Normal)
-
-        self.formLayout_7.setWidget(6, QFormLayout.FieldRole, self.usuCedText)
+        self.gridLayout.addWidget(self.labelVersion_17, 2, 0, 1, 1)
 
         self.labelVersion_16 = QLabel(self.frame_23)
         self.labelVersion_16.setObjectName(u"labelVersion_16")
         self.labelVersion_16.setLineWidth(1)
         self.labelVersion_16.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.formLayout_7.setWidget(8, QFormLayout.LabelRole, self.labelVersion_16)
+        self.gridLayout.addWidget(self.labelVersion_16, 8, 0, 1, 1)
 
-        self.usuNickText = QLineEdit(self.frame_23)
-        self.usuNickText.setObjectName(u"usuNickText")
-        self.usuNickText.setMinimumSize(QSize(0, 30))
+        self.frame_29 = QFrame(self.frame_23)
+        self.frame_29.setObjectName(u"frame_29")
+        self.frame_29.setFrameShape(QFrame.StyledPanel)
+        self.frame_29.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_29)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.ordCliText = QLineEdit(self.frame_29)
+        self.ordCliText.setObjectName(u"ordCliText")
+        self.ordCliText.setMinimumSize(QSize(0, 30))
 
-        self.formLayout_7.setWidget(8, QFormLayout.FieldRole, self.usuNickText)
+        self.horizontalLayout.addWidget(self.ordCliText)
+
+        self.ordCliButton = QPushButton(self.frame_29)
+        self.ordCliButton.setObjectName(u"ordCliButton")
+        self.ordCliButton.setMinimumSize(QSize(120, 30))
+        self.ordCliButton.setFont(font)
+        self.ordCliButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.ordCliButton.setIcon(icon)
+
+        self.horizontalLayout.addWidget(self.ordCliButton)
+
+
+        self.gridLayout.addWidget(self.frame_29, 1, 2, 1, 1)
+
+        self.labelVersion_21 = QLabel(self.frame_23)
+        self.labelVersion_21.setObjectName(u"labelVersion_21")
+        self.labelVersion_21.setLineWidth(1)
+        self.labelVersion_21.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout.addWidget(self.labelVersion_21, 6, 0, 1, 1)
+
+        self.ordDesText = QTextEdit(self.frame_23)
+        self.ordDesText.setObjectName(u"ordDesText")
+
+        self.gridLayout.addWidget(self.ordDesText, 8, 2, 1, 1)
+
+        self.ordResCombo = QComboBox(self.frame_23)
+        self.ordResCombo.addItem("")
+        self.ordResCombo.addItem("")
+        self.ordResCombo.addItem("")
+        self.ordResCombo.setObjectName(u"ordResCombo")
+        self.ordResCombo.setFont(font)
+        self.ordResCombo.setAutoFillBackground(False)
+        self.ordResCombo.setIconSize(QSize(16, 16))
+        self.ordResCombo.setFrame(True)
+
+        self.gridLayout.addWidget(self.ordResCombo, 2, 2, 1, 1)
+
+        self.labelVersion_14 = QLabel(self.frame_23)
+        self.labelVersion_14.setObjectName(u"labelVersion_14")
+        self.labelVersion_14.setLineWidth(1)
+        self.labelVersion_14.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout.addWidget(self.labelVersion_14, 5, 0, 1, 1)
+
+        self.labelVersion_12 = QLabel(self.frame_23)
+        self.labelVersion_12.setObjectName(u"labelVersion_12")
+        self.labelVersion_12.setLineWidth(1)
+        self.labelVersion_12.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout.addWidget(self.labelVersion_12, 1, 0, 1, 1)
+
+        self.frame_30 = QFrame(self.frame_23)
+        self.frame_30.setObjectName(u"frame_30")
+        self.frame_30.setFrameShape(QFrame.StyledPanel)
+        self.frame_30.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame_30)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.ordRecDate = QDateEdit(self.frame_30)
+        self.ordRecDate.setObjectName(u"ordRecDate")
+        self.ordRecDate.setStyleSheet(u"QCalendarWidget QToolButton {\n"
+"  	height: 60px;\n"
+"  	width: 150px;\n"
+"  	color: white;\n"
+"  	font-size: 24px;\n"
+"  	icon-size: 56px, 56px;\n"
+"  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333);\n"
+"  }\n"
+"  QCalendarWidget QMenu {\n"
+"  	width: 150px;\n"
+"  	left: 20px;\n"
+"  	color: white;\n"
+"  	font-size: 18px;\n"
+"  	background-color: rgb(100, 100, 100);\n"
+"  }\n"
+"  QCalendarWidget QSpinBox { \n"
+"  	width: 150px; \n"
+"  	font-size:24px; \n"
+"  	color: white; \n"
+"  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); \n"
+"  	selection-background-color: rgb(136, 136, 136);\n"
+"  	selection-color: rgb(255, 255, 255);\n"
+"  }\n"
+"  QCalendarWidget QSpinBox::up-button { subcontrol-origin: border;  subcontrol-position: top right;  width:65px; }\n"
+"  QCalendarWidget QSpinBox::down-button {subcontrol-origin: border; subcontrol-position: bottom right;  width:65px;}\n"
+"  QCalendarWidget QSpinBox::up-arrow { width:56p"
+                        "x;  height:56px; }\n"
+"  QCalendarWidget QSpinBox::down-arrow { width:56px;  height:56px; }\n"
+"   \n"
+"  /* header row */\n"
+"  QCalendarWidget QWidget { alternate-background-color: rgb(128, 128, 128); }\n"
+"   \n"
+"  /* normal days */\n"
+"  QCalendarWidget QAbstractItemView:enabled \n"
+"  {\n"
+"  	font-size:24px;  \n"
+"  	color: rgb(180, 180, 180);  \n"
+"  	background-color: #35322f;  \n"
+"  	selection-background-color: rgb(64, 64, 64); \n"
+"  	selection-color: rgb(0, 255, 0); \n"
+"  }\n"
+"   \n"
+"  /* days in other months */\n"
+"  /* navigation bar */\n"
+"QCalendarWidget QWidget#qt_calendar_navigationbar\n"
+"{ \n"
+"  background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); \n"
+"}\n"
+"\n"
+"QCalendarWidget QAbstractItemView:disabled \n"
+"{ \n"
+"color: rgb(64, 64, 64); \n"
+"}")
+        self.ordRecDate.setCalendarPopup(True)
+
+        self.horizontalLayout_2.addWidget(self.ordRecDate)
+
+
+        self.gridLayout.addWidget(self.frame_30, 4, 2, 1, 1)
+
+        self.frame_31 = QFrame(self.frame_23)
+        self.frame_31.setObjectName(u"frame_31")
+        self.frame_31.setFrameShape(QFrame.StyledPanel)
+        self.frame_31.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_3 = QHBoxLayout(self.frame_31)
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.ordEntDate = QDateEdit(self.frame_31)
+        self.ordEntDate.setObjectName(u"ordEntDate")
+        self.ordEntDate.setStyleSheet(u"QCalendarWidget QToolButton {\n"
+"  	height: 60px;\n"
+"  	width: 150px;\n"
+"  	color: white;\n"
+"  	font-size: 24px;\n"
+"  	icon-size: 56px, 56px;\n"
+"  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333);\n"
+"  }\n"
+"  QCalendarWidget QMenu {\n"
+"  	width: 150px;\n"
+"  	left: 20px;\n"
+"  	color: white;\n"
+"  	font-size: 18px;\n"
+"  	background-color: rgb(100, 100, 100);\n"
+"  }\n"
+"  QCalendarWidget QSpinBox { \n"
+"  	width: 150px; \n"
+"  	font-size:24px; \n"
+"  	color: white; \n"
+"  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); \n"
+"  	selection-background-color: rgb(136, 136, 136);\n"
+"  	selection-color: rgb(255, 255, 255);\n"
+"  }\n"
+"  QCalendarWidget QSpinBox::up-button { subcontrol-origin: border;  subcontrol-position: top right;  width:65px; }\n"
+"  QCalendarWidget QSpinBox::down-button {subcontrol-origin: border; subcontrol-position: bottom right;  width:65px;}\n"
+"  QCalendarWidget QSpinBox::up-arrow { width:56p"
+                        "x;  height:56px; }\n"
+"  QCalendarWidget QSpinBox::down-arrow { width:56px;  height:56px; }\n"
+"   \n"
+"  /* header row */\n"
+"  QCalendarWidget QWidget { alternate-background-color: rgb(128, 128, 128); }\n"
+"   \n"
+"  /* normal days */\n"
+"  QCalendarWidget QAbstractItemView:enabled \n"
+"  {\n"
+"  	font-size:24px;  \n"
+"  	color: rgb(180, 180, 180);  \n"
+"  	background-color: #35322f;  \n"
+"  	selection-background-color: rgb(64, 64, 64); \n"
+"  	selection-color: rgb(0, 255, 0); \n"
+"  }\n"
+"   \n"
+"  /* days in other months */\n"
+"  /* navigation bar */\n"
+"QCalendarWidget QWidget#qt_calendar_navigationbar\n"
+"{ \n"
+"  background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); \n"
+"}\n"
+"\n"
+"QCalendarWidget QAbstractItemView:disabled \n"
+"{ \n"
+"color: rgb(64, 64, 64); \n"
+"}")
+        self.ordEntDate.setCalendarPopup(True)
+
+        self.horizontalLayout_3.addWidget(self.ordEntDate)
+
+
+        self.gridLayout.addWidget(self.frame_31, 5, 2, 1, 1)
+
+        self.ordValText = QLineEdit(self.frame_23)
+        self.ordValText.setObjectName(u"ordValText")
+        self.ordValText.setMinimumSize(QSize(0, 30))
+
+        self.gridLayout.addWidget(self.ordValText, 3, 2, 1, 1)
+
+        self.ordEstText = QLineEdit(self.frame_23)
+        self.ordEstText.setObjectName(u"ordEstText")
+        self.ordEstText.setMinimumSize(QSize(0, 30))
+
+        self.gridLayout.addWidget(self.ordEstText, 6, 2, 1, 1)
 
 
         self.verticalLayout_27.addWidget(self.frame_23)
@@ -534,34 +676,34 @@ class Ui_usuarios(object):
 
         self.horizontalLayout_13.addItem(self.horizontalSpacer_3)
 
-        self.usuSaveButton = QPushButton(self.frame_24)
-        self.usuSaveButton.setObjectName(u"usuSaveButton")
-        self.usuSaveButton.setMinimumSize(QSize(120, 30))
-        self.usuSaveButton.setFont(font)
-        self.usuSaveButton.setCursor(QCursor(Qt.PointingHandCursor))
-        self.usuSaveButton.setIcon(icon)
+        self.ordSaveButton = QPushButton(self.frame_24)
+        self.ordSaveButton.setObjectName(u"ordSaveButton")
+        self.ordSaveButton.setMinimumSize(QSize(120, 30))
+        self.ordSaveButton.setFont(font)
+        self.ordSaveButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.ordSaveButton.setIcon(icon)
 
-        self.horizontalLayout_13.addWidget(self.usuSaveButton)
+        self.horizontalLayout_13.addWidget(self.ordSaveButton)
 
-        self.usuCancelButton = QPushButton(self.frame_24)
-        self.usuCancelButton.setObjectName(u"usuCancelButton")
-        self.usuCancelButton.setMinimumSize(QSize(120, 30))
-        self.usuCancelButton.setFont(font)
-        self.usuCancelButton.setCursor(QCursor(Qt.PointingHandCursor))
-        self.usuCancelButton.setIcon(icon2)
+        self.ordCancelButton = QPushButton(self.frame_24)
+        self.ordCancelButton.setObjectName(u"ordCancelButton")
+        self.ordCancelButton.setMinimumSize(QSize(120, 30))
+        self.ordCancelButton.setFont(font)
+        self.ordCancelButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.ordCancelButton.setIcon(icon2)
 
-        self.horizontalLayout_13.addWidget(self.usuCancelButton)
+        self.horizontalLayout_13.addWidget(self.ordCancelButton)
 
-        self.usuClearButton = QPushButton(self.frame_24)
-        self.usuClearButton.setObjectName(u"usuClearButton")
-        self.usuClearButton.setMinimumSize(QSize(120, 30))
-        self.usuClearButton.setFont(font)
-        self.usuClearButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.ordClearButton = QPushButton(self.frame_24)
+        self.ordClearButton.setObjectName(u"ordClearButton")
+        self.ordClearButton.setMinimumSize(QSize(120, 30))
+        self.ordClearButton.setFont(font)
+        self.ordClearButton.setCursor(QCursor(Qt.PointingHandCursor))
         icon3 = QIcon()
         icon3.addFile(u":/icons/images/icons/cil-reload.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.usuClearButton.setIcon(icon3)
+        self.ordClearButton.setIcon(icon3)
 
-        self.horizontalLayout_13.addWidget(self.usuClearButton)
+        self.horizontalLayout_13.addWidget(self.ordClearButton)
 
         self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
@@ -586,7 +728,7 @@ class Ui_usuarios(object):
 
         self.retranslateUi(usuarios)
 
-        self.usuRolCombo.setCurrentIndex(-1)
+        self.ordResCombo.setCurrentIndex(-1)
 
 
         QMetaObject.connectSlotsByName(usuarios)
@@ -596,59 +738,59 @@ class Ui_usuarios(object):
         usuarios.setWindowTitle(QCoreApplication.translate("usuarios", u"Form", None))
         self.label_3.setText(QCoreApplication.translate("usuarios", u"<html><head/><body><p><span style=\" font-size:16pt; font-weight:700;\">Ordenes de Trabajo</span></p></body></html>", None))
         self.label_16.setText(QCoreApplication.translate("usuarios", u"<html><head/><body><p><span style=\" font-size:12pt; font-weight:700;\">Lista de Ordenes</span></p></body></html>", None))
-        ___qtablewidgetitem = self.usuTable.horizontalHeaderItem(0)
+        ___qtablewidgetitem = self.ordTable.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("usuarios", u"0", None));
-        ___qtablewidgetitem1 = self.usuTable.horizontalHeaderItem(1)
+        ___qtablewidgetitem1 = self.ordTable.horizontalHeaderItem(1)
         ___qtablewidgetitem1.setText(QCoreApplication.translate("usuarios", u"Nueva columna", None));
-        ___qtablewidgetitem2 = self.usuTable.horizontalHeaderItem(2)
+        ___qtablewidgetitem2 = self.ordTable.horizontalHeaderItem(2)
         ___qtablewidgetitem2.setText(QCoreApplication.translate("usuarios", u"1", None));
-        ___qtablewidgetitem3 = self.usuTable.verticalHeaderItem(0)
+        ___qtablewidgetitem3 = self.ordTable.verticalHeaderItem(0)
         ___qtablewidgetitem3.setText(QCoreApplication.translate("usuarios", u"New Row", None));
-        ___qtablewidgetitem4 = self.usuTable.verticalHeaderItem(1)
+        ___qtablewidgetitem4 = self.ordTable.verticalHeaderItem(1)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("usuarios", u"New Row", None));
-        ___qtablewidgetitem5 = self.usuTable.verticalHeaderItem(2)
+        ___qtablewidgetitem5 = self.ordTable.verticalHeaderItem(2)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("usuarios", u"New Row", None));
 
-        __sortingEnabled = self.usuTable.isSortingEnabled()
-        self.usuTable.setSortingEnabled(False)
-        ___qtablewidgetitem6 = self.usuTable.item(0, 0)
+        __sortingEnabled = self.ordTable.isSortingEnabled()
+        self.ordTable.setSortingEnabled(False)
+        ___qtablewidgetitem6 = self.ordTable.item(0, 0)
         ___qtablewidgetitem6.setText(QCoreApplication.translate("usuarios", u"Nombre ", None));
-        ___qtablewidgetitem7 = self.usuTable.item(0, 1)
+        ___qtablewidgetitem7 = self.ordTable.item(0, 1)
         ___qtablewidgetitem7.setText(QCoreApplication.translate("usuarios", u"C\u00e9dula", None));
-        ___qtablewidgetitem8 = self.usuTable.item(0, 2)
+        ___qtablewidgetitem8 = self.ordTable.item(0, 2)
         ___qtablewidgetitem8.setText(QCoreApplication.translate("usuarios", u"Rol", None));
-        self.usuTable.setSortingEnabled(__sortingEnabled)
+        self.ordTable.setSortingEnabled(__sortingEnabled)
 
-        self.usuAddButton.setText(QCoreApplication.translate("usuarios", u"Agregar", None))
-        self.usuEditButton.setText(QCoreApplication.translate("usuarios", u"Editar", None))
-        self.usuDelButton.setText(QCoreApplication.translate("usuarios", u"Eliminar", None))
+        self.ordAddButton.setText(QCoreApplication.translate("usuarios", u"Agregar", None))
+        self.ordEditButton.setText(QCoreApplication.translate("usuarios", u"Editar", None))
+        self.ordDelButton.setText(QCoreApplication.translate("usuarios", u"Eliminar", None))
         self.label_15.setText(QCoreApplication.translate("usuarios", u"<html><head/><body><p><span style=\" font-size:12pt; font-weight:700;\">Orden Seleccionada</span></p></body></html>", None))
-        self.labelVersion_12.setText(QCoreApplication.translate("usuarios", u"Cliente", None))
-        self.usuNomText.setText("")
-        self.usuNomText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer nombre", None))
-        self.labelVersion_20.setText(QCoreApplication.translate("usuarios", u"Cedula", None))
-        self.usuNom2Text.setText("")
-        self.usuNom2Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el segundo nombre", None))
-        self.labelVersion_21.setText(QCoreApplication.translate("usuarios", u"Estado", None))
-        self.usuApe1Text.setText("")
-        self.usuApe1Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer apellido", None))
-        self.labelVersion_17.setText(QCoreApplication.translate("usuarios", u"Responsable", None))
-        self.usuRolCombo.setItemText(0, QCoreApplication.translate("usuarios", u"Fotocopiado", None))
-        self.usuRolCombo.setItemText(1, QCoreApplication.translate("usuarios", u"Impresi\u00f3n", None))
-        self.usuRolCombo.setItemText(2, QCoreApplication.translate("usuarios", u"Laminado", None))
-
-        self.usuRolCombo.setPlaceholderText(QCoreApplication.translate("usuarios", u"Seleccione una opci\u00f3n", None))
         self.labelVersion_22.setText(QCoreApplication.translate("usuarios", u"Fecha Recepcion", None))
-        self.usuApe2Text.setText("")
-        self.usuApe2Text.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el segundo apellido", None))
+        self.labelVersion_20.setText(QCoreApplication.translate("usuarios", u"Valor", None))
+        self.labelVersion_17.setText(QCoreApplication.translate("usuarios", u"Responsable", None))
+        self.labelVersion_16.setText(QCoreApplication.translate("usuarios", u"Descripcion", None))
+        self.ordCliText.setText("")
+        self.ordCliText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer nombre", None))
+        self.ordCliButton.setText(QCoreApplication.translate("usuarios", u"Cambiar", None))
+        self.labelVersion_21.setText(QCoreApplication.translate("usuarios", u"Estado", None))
+        self.ordDesText.setHtml(QCoreApplication.translate("usuarios", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+        self.ordResCombo.setItemText(0, QCoreApplication.translate("usuarios", u"Fotocopiado", None))
+        self.ordResCombo.setItemText(1, QCoreApplication.translate("usuarios", u"Impresi\u00f3n", None))
+        self.ordResCombo.setItemText(2, QCoreApplication.translate("usuarios", u"Laminado", None))
+
+        self.ordResCombo.setPlaceholderText(QCoreApplication.translate("usuarios", u"Seleccione una opci\u00f3n", None))
         self.labelVersion_14.setText(QCoreApplication.translate("usuarios", u"Fecha Entrega", None))
-        self.usuCedText.setText("")
-        self.usuCedText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el numero de c\u00e9dula", None))
-        self.labelVersion_16.setText(QCoreApplication.translate("usuarios", u"Valor", None))
-        self.usuNickText.setText("")
-        self.usuNickText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el alias", None))
-        self.usuSaveButton.setText(QCoreApplication.translate("usuarios", u"Confirmar", None))
-        self.usuCancelButton.setText(QCoreApplication.translate("usuarios", u"Cancelar", None))
-        self.usuClearButton.setText(QCoreApplication.translate("usuarios", u"Limpiar", None))
+        self.labelVersion_12.setText(QCoreApplication.translate("usuarios", u"Cliente", None))
+        self.ordValText.setText("")
+        self.ordValText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el segundo nombre", None))
+        self.ordEstText.setText("")
+        self.ordEstText.setPlaceholderText(QCoreApplication.translate("usuarios", u"Ingrese el primer nombre", None))
+        self.ordSaveButton.setText(QCoreApplication.translate("usuarios", u"Confirmar", None))
+        self.ordCancelButton.setText(QCoreApplication.translate("usuarios", u"Cancelar", None))
+        self.ordClearButton.setText(QCoreApplication.translate("usuarios", u"Limpiar", None))
     # retranslateUi
 

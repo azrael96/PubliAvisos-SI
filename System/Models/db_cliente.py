@@ -22,7 +22,7 @@ class Cliente(Base):
     id = synonym("cli_cedula")
     def __repr__(self):
         return '<Cliente %r>' % self.id
-def getAllClientes():
+def getListClientes():
     table = Cliente.__table__.columns
     filter = Cliente.cli_cedula != 100000
     query = session.query(table).filter(filter).all()
@@ -51,17 +51,17 @@ def addCliente(Ced, Nom1, Nom2, Ape1, Ape2, Dir, Tel, Cor, Ubi):
     session.commit()
 
 def updateCliente(Ced, Nom1, Nom2, Ape1, Ape2, Dir, Tel, Cor, Ubi):
-
     table = Cliente
     filter = Cliente.cli_cedula == Ced
     updated_rec = session.query(table).filter(filter).first()
-    updated_rec.cli_nombre1 = Nom1,
-    updated_rec.cli_nombre2 = Nom2,
-    updated_rec.cli_apellido1 = Ape1,
-    updated_rec.cli_apellido2 = Ape2,
-    updated_rec.cli_direccion = Dir,
-    updated_rec.cli_telefono = Tel,
-    updated_rec.cli_correo = Cor,
+
+    updated_rec.cli_nombre1 = Nom1
+    updated_rec.cli_nombre2 = Nom2
+    updated_rec.cli_apellido1 = Ape1
+    updated_rec.cli_apellido2 = Ape2
+    updated_rec.cli_direccion = Dir
+    updated_rec.cli_telefono = Tel
+    updated_rec.cli_correo = Cor
     updated_rec.cli_ubicacion = Ubi
     session.commit()
 

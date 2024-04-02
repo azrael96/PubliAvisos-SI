@@ -27,13 +27,9 @@ class Empleado(Base):
 
 def getListEmpleados():
     table = Empleado.__table__.columns
-    filter = Empleado.emp_cedula != 100000
+    filter = Empleado.emp_activo != False
     query = session.query(table).filter(filter).all()
     return query
-
-result = getListEmpleados()
-print(result)
-print(len(result[0]))
 
 def searchEmpleado(Ced):
     table = Empleado.__table__.columns
