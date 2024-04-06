@@ -1,10 +1,11 @@
-from PySide6.QtCore import QDate
-from PySide6.QtWidgets import QWidget, QTableWidgetItem, QMessageBox
+from PySide6.QtCore import QDate, Qt
+from PySide6.QtWidgets import QWidget, QTableWidgetItem, QMessageBox, QProgressBar
 
 from System.Views.ui_orden import Ui_usuarios
 from System.Controllers.clienteDialog import ClientDialog
 from System.Models import db_orden as ordenesData
 from System.Models import db_usuario as usuariosData
+from System.Models import db_cliente as clientesData
 
 cat_dic = {}
 MinDate = QDate(2000, 1, 1)
@@ -47,11 +48,31 @@ class OrdenWidget(QWidget):
             entDate = QDate.fromString(ent, "yyyy-MM-dd")
             self.ui.ordRecDate.setDate(recDate)
             self.ui.ordEntDate.setDate(entDate)
-            self.ui.ordEstText.setText(est)
+
             self.ui.ordValText.setText(val)
             self.ui.ordDesText.setText(des)
 
             self.ui.ordResCombo.setCurrentText(cat_dic[emp])
+
+            t_total = recDate.daysTo(entDate)
+            t_gastado = recDate.currentDate().daysTo(entDate)
+
+            self.ui.progressBar.setMaximum(t_total)
+            self.ui.progressBar.setValue(t_total-t_gastado)
+            self.ui.ordEstText.setText("Quedan " + str(t_gastado) + " dias de "+ str(t_total) +" para entregar")
+
+            if t_gastado < t_total*0.5:
+                self.ui.progressBar.setStyleSheet(
+                    '''QProgressBar { border-color:  rgb(223, 0, 0); }
+                    QProgressBar::chunk { background-color: rgb(223, 48, 48); }''')
+            elif t_gastado < t_total*0.75:
+                self.ui.progressBar.setStyleSheet(
+                    '''QProgressBar { border-color:  rgb(255, 170, 0); }
+                    QProgressBar::chunk { background-color: rgb(255, 188, 55); }''')
+            elif t_gastado <= t_total:
+                self.ui.progressBar.setStyleSheet(
+                    '''QProgressBar { border-color:  rgb(0, 221, 0); }
+                    QProgressBar::chunk { background-color: rgb(48, 221, 48); }''')
 
         def add():
             global pressed
@@ -181,11 +202,16 @@ class OrdenWidget(QWidget):
         dataLen = len(data[0])
         self.clearCod()
         self.ui.ordTable.clear()
-        self.ui.ordTable.setColumnCount(dataLen)
+        self.ui.ordTable.setColumnCount(dataLen+2)
         self.ui.ordTable.setRowCount(0)
-        self.ui.ordTable.setHorizontalHeaderLabels(["ID", "Estado", "Descripcion", "Valor", "Entrega", "Recepcion", "Cliente", "Empleado"])
+        self.ui.ordTable.setHorizontalHeaderLabels(["Codigo", "Estado", "Descripcion", "Valor", "Entrega", "Recepcion",
+                                                    "ClienteID", "EmpleadoID", "Cliente", "Empleado"])
 
         self.ui.ordTable.setColumnHidden(1, True)
+        self.ui.ordTable.setColumnHidden(2, True)
+        self.ui.ordTable.setColumnHidden(3, True)
+        self.ui.ordTable.setColumnHidden(6, True)
+        self.ui.ordTable.setColumnHidden(7, True)
 
         if len(data) != 0:
             self.ui.ordTable.setRowCount(len(data))
@@ -195,4 +221,12 @@ class OrdenWidget(QWidget):
                 for col in row:
                     self.ui.ordTable.setItem(numrow, numcol, QTableWidgetItem(str(col)))
                     numcol += 1
+                cliente = clientesData.searchCliente(data[numrow][6])
+                empleado = usuariosData.searchEmpleado(data[numrow][7])
+                clienteNombre =cliente[1]+" "+cliente[3]
+                empleadoNombre =empleado[1]+" "+empleado[3]
+                self.ui.ordTable.setItem(numrow, 8, QTableWidgetItem(str(clienteNombre)))
+                self.ui.ordTable.setItem(numrow, 9, QTableWidgetItem(str(empleadoNombre)))
                 numrow += 1
+        self.ui.ordTable.resizeColumnsToContents()
+        self.ui.ordTable.sortItems(4, Qt.AscendingOrder)

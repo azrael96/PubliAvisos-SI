@@ -34,6 +34,13 @@ def searchCliente(Ced):
     query = session.query(table).filter(filter).first()
     return query
 
+def searchClienteName(Ced):
+    table = Cliente.__table__.columns
+    filter = Cliente.cli_cedula == Ced
+    query = session.query(table).filter(filter).first()
+    print(query)
+    return query
+
 def addCliente(Ced, Nom1, Nom2, Ape1, Ape2, Dir, Tel, Cor, Ubi):
 
     new_cli = Cliente(cli_cedula = Ced,
