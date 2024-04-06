@@ -2,7 +2,7 @@ from PySide6.QtCore import QParallelAnimationGroup, QEasingCurve, QPropertyAnima
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QMessageBox
 
-from system.resources import constants, functions
+#from system.resources import constants, functions
 
 GLOBAL_STATE = False
 MENU_WIDTH = 240
@@ -18,7 +18,7 @@ MENU_SELECTED_STYLESHEET = """
 
 def popQMessageBox(type, title, msj):
     msgBox = QMessageBox()
-    functions.theme(msgBox, constants.msjBoxTheme)
+    #functions.theme(msgBox, constants.msjBoxTheme)
     if type == "Information":
         QMessageBox.information(msgBox, title, msj)
     if type == "Critical":
